@@ -34,7 +34,7 @@ export default function Home() {
           </div>
         </div>
       </header>
-      {/* <section className="flex-1">
+      <section className="flex-1">
         <div className="container mx-auto px-8 flex flex-col space-y-2">
           <Link
             href="https://balance.chaserensberger.com"
@@ -48,7 +48,7 @@ export default function Home() {
             </Card>
           </Link>
         </div>
-      </section> */}
+      </section>
     </main>
   );
 }
