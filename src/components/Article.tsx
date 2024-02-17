@@ -7,15 +7,23 @@ import {
 } from "@/components/ui/card";
 import Link from "next/link";
 
+interface Article {
+  title: string;
+  description: string;
+  author: string;
+  date: string;
+}
+
+export interface ArticleWithSlug extends Article {
+  slug: string;
+}
+
 function Article({ article }: { article: ArticleWithSlug }) {
   return (
     <article className="md:grid md:grid-cols-4 md:items-baseline">
       <Card className="md:col-span-3">
-        <CardTitle>
-          {/* <Link href={`/articles/${article.slug}`>
-                {article.title}
-            </Link> */}
-        </CardTitle>
+        <CardHeader></CardHeader>
+        <CardTitle>{article.title}</CardTitle>
         {/* <Card.Eyebrow
           as="time"
           dateTime={article.date}
